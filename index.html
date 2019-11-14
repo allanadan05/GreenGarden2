@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- required always first-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+<!-- BOOTSRAP AND CSS -->
+<link rel="stylesheet" href="Steven-FE/css/bootstrap.min.css">
+<link rel="stylesheet" href="Steven-FE/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:/Users/stevenigop/Documents/GitHub/GreenGarden2/Sources/fonts/fontawesome-webfont">
+
+</head>
+
+<body>  
+            <header> 
+                               
+                                <div class="header">
+                                        <div class="row">
+                                                <div class="col-4"><center><i class="fa fa-phone"></i>+12454 5458 77</center></div>
+                                                <div class="col-4"><center><i class="fa fa-paper-plane-o"></i>youremail@Email.com</center></div>
+                                                <div class="col-4"><center>3-5 business delivery & returns</center></div>
+                                         </div>
+                                    
+                                 
+                                 </div>
+                                
+            
+        <div class="container-fluid">
+               
+                                        
+                <nav>
+                        <div class="logo">
+                        <h6>Green Garden</h6>
+                        </div>      <div class="search-box">
+                                    <input type="search" placeholder="Search">
+                                    </div>
+                            
+                        <ul class="nav-links">
+                            
+                            <li>
+                                <a href="">Shop</a>
+                            </li>
+                            <li>
+                                <a href="">Category</a>
+                            </li>
+                            <li>
+                                <a href="">Feed</a>
+                            </li>
+                                <li>     <i class="fa fa-shopping-cart"></i><lable>[0]</lable>
+                                        <button id="btn-profile"><img src="Steven-FE/imgs/login.png" alt=""></button>
+                                </li>
+                            
+                        </ul>
+                            <div class="mini">
+                                <div class="line1"></div>
+                                <div class="line2"></div>
+                                <div class="line3"></div>
+                            </div>
+                            
+                        
+                        </nav>
+                        <div id="profile">
+                            <ul>    
+                                    <li>
+                                            <a href="">Profile</a>
+                                    </li>
+                                    
+                                    <li>
+                                            <a href="">Settings</a>
+                                    </li>
+                                   
+                                    <li>
+                                        <button  id="login-btn" type="button" alt="">
+                                            Log in
+                                          </button>
+                                    </li>
+                                    
+                            </ul>
+
+                         </div>
+            </div>
+        </header>
+       
+    <div class="container">
+
+            
+            
+     </div>   
+                  
+            <div class="popup">
+                <div class="popup-content">
+                 <img src="Steven-FE/imgs/close.png" alt="Close" class="close">
+                
+                 
+                        <div class="row">
+                                <div class="col-sm-5">
+                                    <br>
+                                
+                                    <br><!--login social media accounts-->
+                                        <div class="fb-login">
+                                            <Button>
+                                            <img src="Steven-FE/imgs/facebook-icon.png" alt="">Login with Facebook</Button>
+                                        </div>
+                                        <div class="twit-login">
+                                                <Button>
+                                                <img src="Steven-FE/imgs/twitter-icon.png" alt="">Login with Twitter</Button>
+                                        </div>
+                                        <div class="google-login">
+                                                <Button>
+                                                <img src="Steven-FE/imgs/google-icon.png" alt="">Login with Gmail</Button>
+                                        </div>
+
+
+
+
+                                </div>
+                
+                                <div class="col-sm-2">
+                                    <div class="or">
+                                       <h6>OR</h6> 
+                                    </div>
+
+                                </div>
+                                <!--manually login-->
+                                <div class="col-sm-5">
+                                        <div class="manually">
+                                        <h5>Sign in manually</h5>
+                                        <br>
+                                        <input type="text" placeholder="Username or Email">
+                                        <input type="password" class="glyphicon glyphicon-user" placeholder="Password">
+                    
+                                         </div>
+                                         <div class="btn">
+                                         <span>
+                                         <input type="checkbox" name="" value="" class="checkbox" placeholder="Remember me">
+                                         <label for="remember">Remember me</label>
+                                         </span>
+                                         <button type="button" class="btn btn-danger btn-sm">Log in</button>
+                                        </div>
+                                        <div class="lower-btn">
+                                        
+                                        <a href="#" class="reg">Register now</a>|<a href="#"class="forgot">Forgot Password?</a>
+                                        </div>
+                                        
+                                </div>
+
+                                
+                         </div>
+
+
+
+
+
+              
+                    
+
+                </div>
+            </div>
+                 
+                  
+               
+            
+        
+
+
+
+
+
+
+            <script>
+
+            document.getElementById("login-btn").addEventListener("click",function(){
+
+                document.querySelector(".popup").style.display = "flex";
+                
+            });
+
+            document.querySelector(".close").addEventListener("click",function(){
+                document.querySelector(".popup").style.display = "none";
+            });
+
+            document.getElementById("btn-profile").addEventListener("click",function(){ 
+                document.querySelector("profile").style.display="flex";
+
+            });
+                        $(document).ready(function() {
+                            $("#btn-profile").click(function(){
+                            $("#profile").toggle(500);
+                        });
+                        });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery Plugins -->
+<script src="Steven-FE/js/jquery.min.js"></script>
+<script src="Steven-FE/js/bootstrap.min.js"></script>
+<script src="Steven-FE/js/slick.min.js"></script>
+<script src="Steven-FE/js/nouislider.min.js"></script>
+<script src="Steven-FE/js/jquery.zoom.min.js"></script>
+<script src="Steven-FE/js/main.js"></script>
+<script src="Steven-FE/app.js"></script>
+
+</body>
+
+</html>

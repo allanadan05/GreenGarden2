@@ -1,0 +1,467 @@
+
+
+
+
+
+
+
+/*=========================================================
+	01 -> login 
+===========================================================*/
+
+body{
+
+
+
+}
+
+.container{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align:  center;
+   
+
+}
+
+#login-btn{
+
+    font-size: 16px;
+    background: none;
+    text-decoration: none;
+    border: none;
+    width: 60px;
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+
+}
+
+#login-btn:hover{
+  
+}
+
+.popup{
+
+    background:  rgba(0,0,0,0.06);
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content{
+    height: 400px;
+    width: 700px;
+    background:  #ffffff;
+    padding: 20px;
+    border-radius:  5px;
+    position: relative;
+    
+
+
+
+
+
+}
+
+.popup .manually input{
+    margin: 5px auto;
+    display: inline-block;
+    width: 250px;
+    padding: 8px;
+    border: 1px solid grey;
+    box-shadow: 6px 10px 10px -4px rgba(0,0,0,.75);
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.popup img{
+
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+
+}
+
+.close{
+    
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 20px;
+    width: 20px;
+    border-radius:  50%;
+    box-shadow: 6px 10px 10px -4px rgba(0,0,0,.75);
+    cursor: pointer;
+
+ 
+
+}
+.popup .btn{
+
+    margin: 20px auto;
+
+
+}
+.btn label{
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn .checkbox{
+    width: 20px;
+    height: 15px;
+
+}
+
+.lower-btn {
+
+    font-size: 18px;
+    font-family: sans-serif;
+    
+
+}
+.lower-btn .reg{
+
+    color: #ff6666;
+
+}
+
+.lower-btn .forgot{
+
+    color: grey;
+}
+
+.fb-login button{
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width:  250px;
+    height: 43px;
+    color: #ffffff;
+    background-color: #45619D;
+    font-family: sans-serif;
+
+}
+.fb-login img{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.fb-login button:hover{
+
+cursor: pointer;
+
+
+}
+
+.twit-login{
+    margin: 20px auto;
+
+
+}
+
+.twit-login img{
+    
+    height: 40px;
+    width: 35px;
+     margin-right: 28px;
+   
+}
+
+.twit-login button{
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width:  250px;
+    height: 43px;
+    color: #ffffff;
+    font-family: sans-serif;
+    background: #52A6CA;
+}
+.twit-login button:hover{
+    cursor: pointer;
+}
+
+.google-login button{
+    font-size: 16px;
+    font-weight: bold;
+    width:  250px;
+    height: 43px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: sans-serif;
+    background: #DC4E41;
+    
+
+
+}
+
+.google-login img{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.google-login button:hover{
+    cursor: pointer;
+}
+
+.or h6{
+
+    
+    font-family: sans-serif;
+    margin: 150px auto;
+
+}
+
+/*=========================================================
+	02 -> Navbar
+===========================================================*/
+.header{
+    background-color: #28a846;
+    font-size: 12px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 100%;
+    
+}
+.header i{
+    margin-right: 10px;
+
+}
+
+nav{
+
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+  
+
+}
+
+.logo{
+
+    color: #22B14C;
+    
+}
+
+.nav-links{
+   
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+    
+   
+}
+
+.nav-links li{
+    font-size: 12px;
+    list-style: none;
+
+
+}
+.nav-links li i{
+    margin: 10px;
+    
+
+}
+
+
+.nav-links li a{
+
+    color: #344956;
+    font-size:  20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+
+   
+}
+
+.search-box input{
+
+    width: 250px;
+    height: 35px;
+    border-color: 5px solid#344956;
+   
+   
+    
+}
+.mini div{
+ width: 20px;
+ height: 3px;
+ background-color:black;
+ margin: 5px;
+}
+
+.mini {
+    display: none; 
+    cursor: pointer;
+}
+
+#profile{
+
+    position: absolute;
+    right: 5px;
+    height: 20vh;
+    top: 5vh;
+    display: none;
+    flex-direction: column;
+    align-items:  center;
+    width: 10%;
+    background: whitesmoke;
+    transform: translateX(0%);
+    transition: transform 0.10s ease-in;
+    border-radius: 10px;
+    text-align: center;
+   
+
+   
+
+}
+#profile ul{
+    
+      text-decoration: none;
+      top: 5vh;
+      height: 20vh;
+      background:	whitesmoke;
+      color:black;
+      border-radius: 10px;
+      
+}
+#profile li{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    list-style: none;
+    height:  20px;
+    width: 50px;
+    background:	whitesmoke;
+    top: 10vh;
+    height: 6vh;
+    
+    
+    
+   
+
+
+}
+
+#profile ul li a{
+
+    color: black;
+    flex-direction: column;
+    align-items:  center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+
+
+
+
+}
+#btn-profile img{
+
+    width: 30px;
+    height: 30px;
+    border:none;
+    background: none;
+    text-decoration: none;
+
+}
+#btn-profile{
+
+    border: none;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+   
+      
+        width: 30%;
+        
+       
+    }
+   
+  
+
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+   .nav-links{
+
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    width: 30%;
+    background: whitesmoke;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    font-size: 12px;
+    border-radius: 10px;
+    align-items: center;
+
+
+   }
+
+   .nav-links li{
+       opacity: 0;
+   }
+
+   .mini{
+    display: block;
+   }
+}
+
+
+.nav-active{
+
+    transform:  translateX(0%);
+
+}
+
+@keyframes navLinkFade{
+
+    from{
+    opacity: 0;
+    transform: translateX(50px);
+}
+
+    to{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+}
