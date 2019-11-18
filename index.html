@@ -16,6 +16,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="C:/Users/stevenigop/Documents/GitHub/GreenGarden2/Sources/fonts/fontawesome-webfont">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -24,9 +26,9 @@
                                
                                 <div class="header">
                                         <div class="row">
-                                                <div class="col-4"><center><i class="fa fa-phone"></i>+12454 5458 77</center></div>
-                                                <div class="col-4"><center><i class="fa fa-paper-plane-o"></i>youremail@Email.com</center></div>
-                                                <div class="col-4"><center>3-5 business delivery & returns</center></div>
+                                                <div class="col-4 col-xs-6"><center><i class="fa fa-phone"></i>+12454 5458 77</center></div>
+                                                <div class="col-4 col-xs-6"><center><i class="fa fa-paper-plane-o"></i>youremail@Email.com</center></div>
+                                                <div class="col-4 col-xs-6"><center>3-5 business delivery & returns</center></div>
                                          </div>
                                     
                                  
@@ -39,9 +41,13 @@
                 <nav>
                         <div class="logo">
                         <h6>Green Garden</h6>
-                        </div>      <div class="search-box">
-                                    <input type="search" placeholder="Search">
-                                    </div>
+                        </div>  <!--SEARCH BAR ON HEADER-->
+                                <div class="Search">
+                                    <form class="form-inline active-cyan-4">
+                                     <input  type="text" placeholder="Search" aria-label="Search">
+                                     <button type="button" class="btn"><img src="Steven-FE/imgs/search-icon.png" alt=""></button>
+                                    </form>
+                                </div>
                             
                         <ul class="nav-links">
                             
@@ -67,6 +73,7 @@
                             
                         
                         </nav>
+                        
                         <div id="profile">
                             <ul>    
                                     <li>
@@ -77,7 +84,7 @@
                                             <a href="">Settings</a>
                                     </li>
                                    
-                                    <li>
+                                    <li> <!--login button-->
                                         <button  id="login-btn" type="button" alt="">
                                             Log in
                                           </button>
@@ -86,22 +93,529 @@
                             </ul>
 
                          </div>
+                        
             </div>
         </header>
-       
-    <div class="container">
+    
+    <!--CONTENT-->
+    <div class="content">
+            <div class="container-fluid">
+                <div class="row">
 
+                    <!--Category-->
+                <div class="category">
+                    <div class="col-sm-2">
+                            <h6>Categories</h6>
+                        <ul>
+                            
+                            <li><a href="" alt="">Chairs</a></li>
+                            <li><a href="" alt="">Beds</a></li>
+                            <li><a href="" alt="">Accesories</a></li>
+                            <li><a href="" alt="">Furniture</a></li>
+                            <li><a href="" alt="">Home Deco</a></li>
+                            <li><a href="" alt="">Dressing</a></li>
+                            <li><a href="" alt="">Tables</a></li>
+                            
+                        </ul>
+                        
+
+
+
+                    </div>
+                </div>
+                    <!-- /CATEGORY -->
+                    <div class="col-sm-10">
+                                <!-- PRODUCT HEADER -->
+                                <div class="product-header">
+                                    <div class="row">
+                                        <!-- PRICE RANGE -->
+                                        <div class="col-sm-7">
+                                            <div class="sliderContainer">
+                                                <input type="range" min="1" max="10000" id="myrange" class="slider">
+                                                <p>Price:$<span id="value"></span></p>
+                                            </div>
+                                        </div>
+                                        <!-- /PRICE RANGE -->
+
+
+                                                <!-- SORT -->
+                                                <div class="col-sm-5">
+                                                        <!-- SORT BY DATE  --> 
+                                                        <div class="sort-date">
+                                                                <label>
+                                                                    Sort by
+                                                                    <select class="input-select">
+                                                                        <option value="0">Date</option>
+                                                                        <option value="1">2</option>
+                                                                        <option value="2">3</option>
+                                                                        <option value="0">4</option>
+                                                                        <option value="1">5</option>
+                                                                        <option value="2">6</option>
+                                                                        <option value="0">6</option>
+                                                                        <option value="1">7</option>
+                                                                        <option value="2">8</option>
+                                                                        <option value="0">9</option>
+                                                                        <option value="1">10</option>
+                                                                        <option value="2">11</option>
+                                                                    </select>
+                                                                </label>
+                                                                
+                                                            </div>
+                                                        <!-- /SORT BY DATE -->   
+                                                        <!-- SORT BY DATE -->     
+                                                        <div class="view-date">
+                                                                <label>
+                                                                    View
+                                                                    <select class="input-select">
+                                                                        <option value="0">01</option>
+                                                                        <option value="1">2</option>
+                                                                        <option value="2">3</option>
+                                                                        <option value="0">4</option>
+                                                                        <option value="1">5</option>
+                                                                        <option value="2">6</option>
+                                                                        <option value="0">6</option>
+                                                                        <option value="1">7</option>
+                                                                        <option value="2">8</option>
+                                                                        <option value="0">9</option>
+                                                                        <option value="1">10</option>
+                                                                        <option value="2">11</option>
+                                                                    </select>
+                                                                </label>
+                                                                
+                                                            </div>
+                                                        <!-- /SORT BY DATE -->
+
+                                                    
+                                                </div>
+                                                <!-- /SORT -->
+                                    </div>
+                                </div>
+                                <!-- /PRODUCT HEADER -->
+                            
+
+                                                        <!--PRODUCT-->
+                                                    <div class="product-column">
+                                                        <div class="row">
+                                                                <!--FIRST PRODUCT COLUMN-->
+                                                                <div class="col-sm-3 col-xs-6">
+                                                                    <!--product 1-->
+                                                                        <div class="product">
+                                                                                <div class="product-img">
+                                                                                    <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                    <!--
+                                                                                    <div class="product-label">
+                                                                                        <span class="sale">-30%</span>
+                                                                                        <span class="new">NEW</span>
+                                                                                    </div>
+                                                                                    -->
+                                                                                </div>
+                                            
+                                                                                <div class="product-body">
+                                                                                    
+                                                                                    <h3 class="product-name"><a href="#">BONSAI</a></h3>
+                                                                                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                    
+                                                                                    <div class="product-btns">
+                                                                                        <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                        <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                    
+                                                                            </div>
+                                                                            <!-- /product 1 -->
+
+                                                                            <!--product 2-->
+                                                                            <div class="product">
+                                                                                    <div class="product-img">
+                                                                                        <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                        <!--
+                                                                                        <div class="product-label">
+                                                                                            <span class="sale">-30%</span>
+                                                                                            <span class="new">NEW</span>
+                                                                                        </div>
+                                                                                        -->
+                                                                                    </div>
+                                                
+                                                                                    <div class="product-body">
+                                                                                        
+                                                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                        
+                                                                                        <div class="product-btns">
+                                                                                                <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                                <!-- /product 2 -->
+
+                                                                                <!-- product 3 -->
+                                                                                <div class="product">
+                                                                                        <div class="product-img">
+                                                                                            <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                            <!--
+                                                                                            <div class="product-label">
+                                                                                                <span class="sale">-30%</span>
+                                                                                                <span class="new">NEW</span>
+                                                                                            </div>
+                                                                                            -->
+                                                                                        </div>
+                                                    
+                                                                                        <div class="product-body">
+                                                                                            
+                                                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                            
+                                                                                            <div class="product-btns">
+                                                                                                    <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    
+                                                                                    </div>
+                                                                                    <!-- /product 3 -->
+
+
+                                                                    
+
+
+
+
+
+
+
+
+                                                                </div>
+                                                                <!--/FIRST PRODUCT COLUMN-->
+
+                                                                <!--SECOND PRODUCT COLUMN-->
+                                                                <div class="col-sm-3 col-xs-6">
+                                                                    <!--product 1-->
+                                                                        <div class="product">
+                                                                                <div class="product-img">
+                                                                                    <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                    <!--
+                                                                                    <div class="product-label">
+                                                                                        <span class="sale">-30%</span>
+                                                                                        <span class="new">NEW</span>
+                                                                                    </div>
+                                                                                    -->
+                                                                                </div>
+                                            
+                                                                                <div class="product-body">
+                                                                                    
+                                                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                    
+                                                                                    <div class="product-btns">
+                                                                                            <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                            </div>
+                                                                            <!-- /product 1 -->
+
+                                                                            <!--product 2-->
+                                                                            <div class="product">
+                                                                                    <div class="product-img">
+                                                                                        <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                        <!--
+                                                                                        <div class="product-label">
+                                                                                            <span class="sale">-30%</span>
+                                                                                            <span class="new">NEW</span>
+                                                                                        </div>
+                                                                                        -->
+                                                                                    </div>
+                                                
+                                                                                    <div class="product-body">
+                                                                                        
+                                                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                        
+                                                                                        <div class="product-btns">
+                                                                                                <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+
+                                                                                <!-- /product 2 -->
+
+                                                                                <!-- product 3 -->
+
+                                                                                <div class="product">
+                                                                                        <div class="product-img">
+                                                                                            <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                            <!--
+                                                                                            <div class="product-label">
+                                                                                                <span class="sale">-30%</span>
+                                                                                                <span class="new">NEW</span>
+                                                                                            </div>
+                                                                                            -->
+                                                                                        </div>
+                                                    
+                                                                                        <div class="product-body">
+                                                                                            
+                                                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                            
+                                                                                            <div class="product-btns">
+                                                                                                    <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    
+                                                                                    </div>
+                                                                                    <!-- /Product 3 -->
+
+
+                                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                </div>
+                                                                <!--?SECOND PRODUCT COLUMN-->
+
+
+
+                                                                <!--THIRD PRODUCT COLUMN-->
+                                                                <div class="col-sm-3 col-xs-6">
+                                                                    <!--PRODUCT 1-->
+                                                                        <div class="product">
+                                                                                <div class="product-img">
+                                                                                    <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                    <!--
+                                                                                    <div class="product-label">
+                                                                                        <span class="sale">-30%</span>
+                                                                                        <span class="new">NEW</span>
+                                                                                    </div>
+                                                                                    -->
+                                                                                </div>
+                                            
+                                                                                <div class="product-body">
+                                                                                    
+                                                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                    
+                                                                                    <div class="product-btns">
+                                                                                            <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                            </div>
+
+                                                                            <!--PRODUCT 2-->
+                                                                            <div class="product">
+                                                                                    <div class="product-img">
+                                                                                        <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                        <!--
+                                                                                        <div class="product-label">
+                                                                                            <span class="sale">-30%</span>
+                                                                                            <span class="new">NEW</span>
+                                                                                        </div>
+                                                                                        -->
+                                                                                    </div>
+                                                
+                                                                                    <div class="product-body">
+                                                                                        
+                                                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                        
+                                                                                        <div class="product-btns">
+                                                                                                <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                                <!--/PRODUCT 2-->
+
+                                                                                <!--PRODUCT 3-->
+
+                                                                                <div class="product">
+                                                                                        <div class="product-img">
+                                                                                            <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                            <!--
+                                                                                            <div class="product-label">
+                                                                                                <span class="sale">-30%</span>
+                                                                                                <span class="new">NEW</span>
+                                                                                            </div>
+                                                                                            -->
+                                                                                        </div>
+                                                    
+                                                                                        <div class="product-body">
+                                                                                            
+                                                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                            
+                                                                                            <div class="product-btns">
+                                                                                                    <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    
+                                                                                    </div>
+
+                                                                                    <!--/PRODUCT 3-->
+                                                                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                </div>
+                                                                <!--/THIRD PRODUCT COLUMN-->
+
+                                                                <!--FOURTH PRODUCT COLUMN-->
+                                                                <div class="col-sm-3 col-xs-6">
+                                                                        <!--PRODUCT1-->
+                                                                        <div class="product">
+                                                                                <div class="product-img">
+                                                                                    <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                    <!--
+                                                                                    <div class="product-label">
+                                                                                        <span class="sale">-30%</span>
+                                                                                        <span class="new">NEW</span>
+                                                                                    </div>
+                                                                                    -->
+                                                                                </div>
+                                            
+                                                                                <div class="product-body">
+                                                                                    
+                                                                                    <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                    <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                    
+                                                                                    <div class="product-btns">
+                                                                                            <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                            <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            
+                                                                            </div>
+                                                                            <!--/PRODUCT 1-->
+                                                                    
+
+                                                                            <!--PRODUCT2-->
+                                                                            <div class="product">
+                                                                                    <div class="product-img">
+                                                                                        <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                        <!--
+                                                                                        <div class="product-label">
+                                                                                            <span class="sale">-30%</span>
+                                                                                            <span class="new">NEW</span>
+                                                                                        </div>
+                                                                                        -->
+                                                                                    </div>
+                                                
+                                                                                    <div class="product-body">
+                                                                                        
+                                                                                        <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                        <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                        
+                                                                                        <div class="product-btns">
+                                                                                                <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                
+                                                                                </div>
+                                                                                <!--/PRODUCT2-->
+
+                                                                                <!--PRODUCT 3-->
+                                                                                <div class="product">
+                                                                                        <div class="product-img">
+                                                                                            <img src="Steven-FE/product/bonsai.jpg" alt="">
+                                                                                            <!--
+                                                                                            <div class="product-label">
+                                                                                                <span class="sale">-30%</span>
+                                                                                                <span class="new">NEW</span>
+                                                                                            </div>
+                                                                                            -->
+                                                                                        </div>
+                                                    
+                                                                                        <div class="product-body">
+                                                                                            
+                                                                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
+                                                                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+                                                                                            
+                                                                                            <div class="product-btns">
+                                                                                                    <button class="quick-view"><i class='fas fa-bars'></i></i><span class="tooltipp">Quick view</span></button>
+                                                                                                    <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i><span class="tooltipp">Add to cart</span> </button>
+                                                                                                    <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Add to wishlist</span></button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    
+                                                                                    </div>
+                                                                                    <!--/PRODUCT 3-->
+                                                                    </div>
+                                                                    <!--/FOURTH PRODUCT COLUMN-->
+
+                                                        </div>
+                                                    </div>
+                                                        <!--/PRODUCT-->
+
+
+
+
+
+
+                    </div>
+                    
+                        
+                    
+                </div>
+                    
+                    
+            </div>   
+    </div>
+     <!--/CONTENT-->
             
-            
-     </div>   
-                  
+            <!--LOGIN MODAL-->
             <div class="popup">
                 <div class="popup-content">
                  <img src="Steven-FE/imgs/close.png" alt="Close" class="close">
                 
                  
                         <div class="row">
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 col-xs-6">
                                     <br>
                                 
                                     <br><!--login social media accounts-->
@@ -123,14 +637,14 @@
 
                                 </div>
                 
-                                <div class="col-sm-2">
+                                <div class="col-sm-2 col-xs-6">
                                     <div class="or">
                                        <h6>OR</h6> 
                                     </div>
 
                                 </div>
                                 <!--manually login-->
-                                <div class="col-sm-5">
+                                <div class="col-sm-5 col-xs-6">
                                         <div class="manually">
                                         <h5>Sign in manually</h5>
                                         <br>
@@ -164,17 +678,89 @@
 
                 </div>
             </div>
+            <!--/LOGIN MODAL-->
+
+            <!--FOOTER-->
+            <footer>    
+    
+                    <!--SEARCH BAR FOOTER-->
+                        <div class="popup-footer">
+                                <div class="row">
+                                <div class="col-sm-6 col-xs-6"><h4>Subscribe to our Newsletter</h4><p>Get e-email updates about our latest shop and special offers</p></div>
+                                <div class="col-sm-6 col-xs-6">
+                                    <div class="wrap">
+                                        <div class="searchfooter">
+                                           <input type="text" placeholder="Enter email address">
+                                           <button type="submit">Subscribe </button>
+                                        </div>
+                                     </div>
+                                    </div>
+                               
+                        </div>
+                    </div>
+                    <div class="footer">
+                         
+                          
+                             <div class="row">
+                                    <div class="col-sm-4 col-xs-6">
+            
+                                        <h6>Green Garder</h6>
+                                        <br>
+                                        <p>Far far away,behind the world<br> mountains,far from the<br>countries Vokallia and<br>  Consonatia.</p>
+                                        
+                                        <i class="fa fa-facebook"></i>
+                                        <i class='fab fa-twitter'></i>
+                                        <i class='fab fa-instagram'></i>
+                                       
+            
+                                    </div>
+                                    <div class="col-sm-2 col-xs-6">
+                                            
+                                        <ul>
+                                            <li><a href="" alt=""><b>Menu</b></a></li>
+                                            <li><a href="" alt="">Shop</a></li>
+                                            <li><a href="" alt="">About</a></li>
+                                            <li><a href="" alt="">Contact Us</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                   
+                                    <div class="col-sm-3 col-xs-6">
+                                        <h6>Help</h6>
+                                        <ul>
+                                                <li><a href="" alt="">Shipping Information</a></li>
+                                                <li><a href="" alt="">Returns & Exchange</a></li>
+                                                <li><a href="" alt="">Terms & conditions</a></li>
+                                                <li><a href="" alt="">Privacy Policy</a></li>
+                                                <li><a href="" alt="">FAQs</a></li>
+                                                <li><a href="" alt="">Contact</a></li>
+                                            </ul>
+            
+                                    </div>
+                                    <div class="col-sm-3 col-xs-6">
+                                        <h6>Have a Question?</h6>
+                                       <i class='fas fa-map-marker-alt'></i><p>203 Fake St.Mountain<br>View, San Francisco,<br>California, USA</p>
+                                       <i class='fas fa-envelope'></i><p>info@yourdomain.com</p>
+                                       <i class='fas fa-phone'></i><p>+544 5477922 1</p>
+                                    </div>
+                                    
+                                  </div>
+             </footer> 
+             <!--/FOOTER-->
                  
                   
                
             
         
 
+            
+
+        
 
 
 
 
-
+            <!--SCRIPT-->
             <script>
 
             document.getElementById("login-btn").addEventListener("click",function(){
@@ -191,26 +777,15 @@
                 document.querySelector("profile").style.display="flex";
 
             });
+
+
+         
                         $(document).ready(function() {
                             $("#btn-profile").click(function(){
-                            $("#profile").toggle(500);
+                            $("#profile").slideToggle(500);
                         });
                         });
             </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- jQuery Plugins -->
 <script src="Steven-FE/js/jquery.min.js"></script>
@@ -222,5 +797,6 @@
 <script src="Steven-FE/app.js"></script>
 
 </body>
+<!--FOOTER-->
 
 </html>
