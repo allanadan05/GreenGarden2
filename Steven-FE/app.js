@@ -27,3 +27,28 @@ output.innerHTML = slider.value;
 slider.oninput = function(){
     output.innerHTML = this.value;
 }
+
+document.getElementById("login-btn").addEventListener("click",function(){
+
+                document.querySelector(".popup").style.display = "flex";
+                
+            });
+
+            document.querySelector(".close").addEventListener("click",function(){
+                document.querySelector(".popup").style.display = "none";
+            });
+
+            document.getElementById("btn-profile").addEventListener("click",function(){ 
+                document.querySelector("profile").style.display="flex";
+
+            });
+
+
+                             $(document).ready(function() {
+                            $("#btn-profile").click(function(){
+                            $("#profile").slideToggle(500);
+                        });
+                        });
+
+
+

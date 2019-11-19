@@ -18,8 +18,11 @@
 <link rel="stylesheet" href="C:/Users/stevenigop/Documents/GitHub/GreenGarden2/Sources/fonts/fontawesome-webfont">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
 
 </head>
+
 
 <body>  
             <header> 
@@ -102,44 +105,52 @@
             <div class="container-fluid">
                 <div class="row">
 
-                    <!--Category-->
-                <div class="category">
-                    <div class="col-sm-2">
-                            <h6>Categories</h6>
-                        <ul>
-                            
-                            <li><a href="" alt="">Chairs</a></li>
-                            <li><a href="" alt="">Beds</a></li>
-                            <li><a href="" alt="">Accesories</a></li>
-                            <li><a href="" alt="">Furniture</a></li>
-                            <li><a href="" alt="">Home Deco</a></li>
-                            <li><a href="" alt="">Dressing</a></li>
-                            <li><a href="" alt="">Tables</a></li>
-                            
-                        </ul>
-                        
+                  
+                    <div class="col-sm-12">
+                                                <!-- CATEGORIES -->
+                                            <div class="category">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <h5><center>Categories</center></h5>
+                                                       
+                                                        <ul>
+                                                            <li><a  href="" >All</a></li>
+                                                            <li><a  href="" >Beds</a></li>
+                                                            <li><a  href="" >Accesories</a></li>
+                                                            <li><a  href="" >Funiture</a></li>
+                                                            <li><a  href="" >Home Deco</a></li>
+                                                            <li><a  href="" >Dressing</a></li>
+                                                            <li><a  href="" >Tables</a></li>
 
-
-
-                    </div>
-                </div>
-                    <!-- /CATEGORY -->
-                    <div class="col-sm-10">
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <!-- /CATEGORIES -->
                                 <!-- PRODUCT HEADER -->
                                 <div class="product-header">
                                     <div class="row">
+                                        <!-- SHOWING -->
+                                        <div class="col-sm-4">
+                                                <div class="showing">
+                                                <button><i class="fa fa-th-large"></i></button><label>Showing 1-8of 25 </label>
+                                                </div>
+                                        </div>
+                                        <!-- /SHOWING -->
+
+                                        
                                         <!-- PRICE RANGE -->
-                                        <div class="col-sm-7">
+                                        <div class="col-sm-4">
                                             <div class="sliderContainer">
                                                 <input type="range" min="1" max="10000" id="myrange" class="slider">
-                                                <p>Price:$<span id="value"></span></p>
+                                                <p>Price: $<span id="value"></span></p>
                                             </div>
                                         </div>
                                         <!-- /PRICE RANGE -->
 
 
                                                 <!-- SORT -->
-                                                <div class="col-sm-5">
+                                                <div class="col-sm-4">
                                                         <!-- SORT BY DATE  --> 
                                                         <div class="sort-date">
                                                                 <label>
@@ -753,39 +764,18 @@
             
         
 
+        
             
+                 
+           
 
         
 
 
 
 
-            <!--SCRIPT-->
-            <script>
-
-            document.getElementById("login-btn").addEventListener("click",function(){
-
-                document.querySelector(".popup").style.display = "flex";
-                
-            });
-
-            document.querySelector(".close").addEventListener("click",function(){
-                document.querySelector(".popup").style.display = "none";
-            });
-
-            document.getElementById("btn-profile").addEventListener("click",function(){ 
-                document.querySelector("profile").style.display="flex";
-
-            });
-
-
-         
-                        $(document).ready(function() {
-                            $("#btn-profile").click(function(){
-                            $("#profile").slideToggle(500);
-                        });
-                        });
-            </script>
+           
+           
 
 <!-- jQuery Plugins -->
 <script src="Steven-FE/js/jquery.min.js"></script>

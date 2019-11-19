@@ -683,7 +683,7 @@ footer{
   .searchfooter button{
         width:  85px;
          height: 35px;
-        background:#19e64d;
+        background:#82AE46;
         font-size: 14px;
         border: none;
         cursor: pointer;
@@ -698,7 +698,7 @@ footer{
 
     width:  35px;
     height: 35px;
-      background:#19e64d;
+      background:#82AE46;
       font-size: 14px;
       border: none;
       cursor: pointer;
@@ -713,13 +713,7 @@ footer{
 
 
    .category ul{
-    text-align: center;
-    background: whitesmoke;
-    text-align: center;
-    font-size: 18px;
-    color: grey;
-    width: 500px;
-    border-radius: 5px;
+  
    
     
     
@@ -868,7 +862,7 @@ footer{
 
     width:  35px;
     height: 35px;
-      background:#19e64d;
+      background:#82AE46;
       font-size: 14px;
       border: none;
       cursor: pointer;
@@ -884,73 +878,80 @@ footer{
   /*=========================================================
 	04 -> CONTENT
 ===========================================================*/
-.container-fluid .row{
+.category h5{
 
-    
+    font-size: 30px;
+    font-family: sans-serif;
+    color: gray;
+    font-weight: bold;
+
 }
 .category{
-    text-align: center;
-    background: whitesmoke;
-    text-align: center;
-    font-size: 18px;
-    color: grey;
-    width: 15%;
-    border-radius: 5px;
-    margin-top: 20px;
-    
-    
-}
-.category h6{
-    
-    margin: 25px;
-    font-family: sans-serif;
-    font-weight: bold;
-    
-    
-
+  
+   
+    height: 130px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .category  ul{
 
-    text-align: justify;
-    align-items: center;
-    margin-top: 70px;
+ 
+ margin-left: 340px;
+ 
+
+
+   
    
 
 }
 .category li{
-
-    margin-top: 40px;
     list-style: none;
-    text-align: justify;
-    align-items: center;
+    color: gray;
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+    
+    
+   
+   
+    
 
 
 
 }
 .category  a{
 
-    font-size: 16px;
-    color: gray;
+    color: #19e64d;
     text-decoration: none;
+   
+    
+
+  
+
+}
+.category .active{
+background-color: #82AE46;
+padding: 7px 15px;
+border-radius: 10px;
+color: white;
 
 }
 
 .category ul li a:hover{
-
-    font-size: 18px;
-    color: #24FE41;
-    text-decoration: none;
-
-}
-
-
-.category  .col-sm-10{
-
-    background: none;
+    font-size: 22px;
+    transition: 1s;
+    font-weight: bold;
+    color: #82AE46;
     
-   
+    
+
+    
+
 }
+
+
+
 
 .row .product  .col-sm-10{
 
@@ -1011,7 +1012,8 @@ footer{
     color:gray;
     float: left;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 180px;
+    
     
     
    
@@ -1101,17 +1103,21 @@ footer{
     -webkit-appearance: none;
     width: 200px;
     height: 5px;
-    background: gold;
+    background: #82AE46;
     border-radius: 10px;
     outline: none;
     -webkit-transition: 0,2s ;
     transition: opacity 0.2s;
-    box-shadow: 0px 1px 10px 1px black;
+    margin-left: 130px;
 
 
 }
 .slider:hover{
     opacity: 1;
+    background-color: #19e64d;
+    width: 220px;
+    height: 10px;
+    transition: 1s;
 }
 .slider::-webkit-slider-thumb{
     -webkit-appearance: none;
@@ -1119,16 +1125,28 @@ footer{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: 2px solid gold;
+    border: 2px solid #82AE46;
     background-color: white;
     cursor: pointer;
+
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: #19e64d;
+    border: 2px solid #82AE46;
+    width: 20px;
+    height: 20px;
+    transition: 1s;
+
 
 }
 
 .sliderContainer p{
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    margin-left: 190px;
+    color:#82AE46;
+   
 
 }
 
@@ -1137,8 +1155,9 @@ footer{
     color:black;
     font-size: 14px;
     position: absolute;
-    left: 27%;
-    top: 60%;
+    left: 70%;
+    top: 50%;
+    color: #82AE46;
 }
 
 .slider::before{
@@ -1146,8 +1165,43 @@ footer{
     color:black;
     font-size: 14px;
     position: absolute;
-    left: 2%;
-    top: 60%;
+    left: 32%;
+    top: 50%;
+    color: #82AE46;
+}
+.showing button{
+
+    width: 35px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: #82AE46;
+    border: none;
+    cursor: pointer;
+    
+}
+.showing button:hover{
+    
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    background-color: #19e64d;
+
+}
+.showing button>i{
+
+    font-size: 18px;
+    color: white;
+    
+ 
+    
+}
+.showing label{
+
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: sans-serif;
+
 }
 /*=========================================================
 	06 -> PRODUCT
@@ -1300,7 +1354,7 @@ footer{
   
   
   .product .product-body .product-btns>button:hover {
-    
+    background-color: #19e64d;
     width: 50px;
     height: 50px;
   
@@ -1321,7 +1375,7 @@ footer{
     padding: 10px;
     font-size: 12px;
     line-height: 10px;
-    background: #82AE46;
+    background: #19e64d;
     color: #FFF;
     text-transform: uppercase;
     z-index: 10;
