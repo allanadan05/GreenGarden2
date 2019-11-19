@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+
+<script src="jquery.min.js"></script>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>GreenGarden</title>
+		
+		<link rel="icon" href="./img/AlexSteelSupplyLogotitlebar.png" type="image">
+
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    </head>
+    <body>
+
+
+
+    	<div class="container-fluid">
+    			<!---checkoutform-->
+    			<div class="row">
+				  <div class="col-sm-8">
+				  	
+				  	<h1>Checkout</h1>
+
+				  		<div class="form-input">
+
+    					<input type="text" id="lname" name="lastname" placeholder="lastname">	
+
+    					
+    					<input type="text" id="fname" name="firstname" placeholder="firstname">	
+
+
+    					
+    					<input type="text" id="company" name="email" placeholder="Company name">	
+
+
+    					
+    					<input type="text" id="email" name="Address" placeholder="email">
+    					<input type="text" id="state" name="city" placeholder="United States">
+    					<input type="text" id="address" name="state" placeholder="Address">
+    					<input type="text" id="town" name="state" placeholder="Town">
+    					<input type="text" id="zipcode" name="state" placeholder="Zip Code">
+
+    					<input type="text" id="phonenumber" name="state" placeholder="Phone Number">
+    					</div>
+    					
+
+    					<textarea name="comment" id="commentbox" form="usrform">Enter text here...</textarea>
+    					<br>
+    					<div class="box">
+    					<input type="checkbox" checked="checked" name="sameadr">Cash On Delivery</label>
+    					<br>
+    					<input type="checkbox" checked="checked" name="sameadr">Ship to a different address</label>
+    				</div>
+
+    			</div>
+
+
+				  <div class="col-sm-4">
+				  								<div class="carttotal">
+											  	<h5>Cart total</h5>
+
+											  	<br>
+											  	<br>
+											  
+											  	<table>
+											  		<tr>
+											  			<td>Subtotal:</td>
+											  			<td>$140.00</td>
+											  		</tr>
+											  		<tr>
+											  			<td>Delivery:</td>
+											  			<td>Free</td>
+											  		</tr>
+											  		<tr>
+											  			<td>Total:</td>
+											  			<td>$140.00</td>
+											  		</tr>
+
+											  	</table>
+											  </div>
+
+											  	<br>
+											  	<br>
+											  	<br>
+
+											  	<label><i input type="checkbox" checked="checked" name="sameadr">Cash On Delivery</i></label>
+											  	<br>
+											  	<input type="checkbox" check="checked" name="sameadr">Paypal</label>
+											  	<label><img id="visa" src="image/visa-icon.png"></label>
+											  	<label><img id="master" src="image/mastercard-icon.png"></label>
+											  	<br>
+											  	
+                    							
+                    							
+                    							<br>
+                    							 <button onclick="document.getElementById('id01').style.display='block'" class="checkout_btn">Checkout</button>
+
+                    						
+                    							</div>
+                    							<div class="w3-container">
+
+ 
+
+  <div id="id01" class="w3-modal" >
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <ul>
+      	<li><h3 id="modal_header">How was your expirience</h3></li>
+      
+      	<!---stars-->
+
+
+
+
+      	<li><div class="rating">
+      		<input type="radio" name="star" id="star1"><label for="star1"></label>
+
+      		<input type="radio" name="star" id="star2"><label for="star2"></label>
+
+			<input type="radio" name="star" id="star3"><label for="star3"></label>
+
+			<input type="radio" name="star" id="star4"><label for="star4"></label>
+
+			<input type="radio" name="star" id="star5"><label for="star5"></label>
+
+
+      
+      		
+      		
+      		
+      	</div></li>
+
+
+      	
+
+
+
+      	<!---comment box-->
+      	<li><textarea name="comment" id="modal_commentbox" placeholder="Enter your comment here"></textarea></li>
+
+
+
+      	<!---button-->
+      	<li><button type="submit" name="submit" id="modal_submit"><b>Submit</b></button></li>
+
+
+
+
+
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    			<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+</body>
+</html>
