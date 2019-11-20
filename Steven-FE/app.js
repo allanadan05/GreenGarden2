@@ -17,6 +17,8 @@ const navSlide = () => {
 }
 navSlide();
 
+
+
 //range slider
 
 var slider = document.getElementById("myrange");
@@ -51,4 +53,9 @@ document.getElementById("login-btn").addEventListener("click",function(){
                         });
 
 
+
+
+$(document).on('click','ul li',function(){
+    $(this).addClass('active').siblings().removeClass('active');
+})
 
