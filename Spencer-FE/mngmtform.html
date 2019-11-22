@@ -52,7 +52,12 @@
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-<script>
+
+
+	
+
+    </head>
+    <script>
 	$(document).ready(function(){
 			$("#show").hide();
 
@@ -69,52 +74,39 @@
 		});
 
 </script>
-
-	
-
-    </head>
     <body>
 
-    	<h2 id="feedback"><b>Feedback Form</b></h2>
+    	<div class="container">
+  <h2>Panel Heading</h2>
+  <div class="panel panel-default" >
+    <div class="panel-heading" id="panel-heading">Panel Heading
 
-			<div class="management" id="mngt">
+            <div class = "card">
+              <div class = "card-header">
+                <span class="card-title"><strong>Feedback</strong></span>
 
-
-	<button id="show">Show FeedBack</button>
-
-	<div class="body">
-		<button id="hide">HIDE</button>
-		<br>
-		
-		<h4 id="sendus"> Send us your feedback..</h4>
-		<h4 id="text"> We want to know what you thought of your experience at Green Garden so we'd love to hear your feedback.</h4>
-
-		<input type="text" id="title" name="title" placeholder="email">
-		<textarea type="text id=" id="comment" placeholder="comment here.."></textarea>
-
-		<br>
-<br>
-
-
-		<button class="feedbackbtn">submit</button>
-
-	</div>
+              </div>
+              <div class = "card-body">
+                <div class="form-group">
+                  <textarea class="form-control" rows="5" id="comment" placeholder = "What's on your mind?"></textarea>
+                </div class="">
+                               <button id="hide">hide</button>
+                <button id="show">show</button>
+				<div class = "card cardstyle">
+                
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
-			
+    </div>
+    <div class="panel-body" id="panel-body">Panel Content</div>
+  </div>
+</div>
 
-
-			
-
-
-
-
-
-
-
-
-			</div>
+	</body>
 
 
 
