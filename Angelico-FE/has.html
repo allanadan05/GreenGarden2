@@ -1,0 +1,201 @@
+ <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GreenGarden</title>
+    <link rel="icon" href="./img/AlexSteelSupplyLogotitlebar.png" type="image">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css"/>
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Custom stlylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="Angelico-FE/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      $(document).ready(function(){
+        $(".firstdrop").hide();
+        $(".seconddrop").hide();
+        $(".thirddrop").hide();
+        $("#firstbutton").click(function(){
+          $(".firstdrop").toggle();
+          $(".seconddrop").hide();
+          $(".thirddrop").hide();
+        });
+        $("#seconddrop").click(function(){
+          $(".seconddrop").toggle();
+          $(".firstdrop").hide();
+          $(".thirddrop").hide();
+        });
+        $("#thirddrop").click(function(){
+          $(".thirddrop").toggle();
+          $(".firstdrop").hide();
+          $(".seconddrop").hide();
+        });
+        $("#dropdrop").click(function(){
+          $(".dropdrop").toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar">
+        <b><logo>Green Garden</logo></b>
+        <table>
+          <tr>
+            <td><input id="searchs" type="text" placeholder="Search"></td>
+            <td><button id="btn-search"type="submit"><i class="fa fa-search"></i></button></td>
+          </tr>
+        </table>
+
+        <!--- buttons ------------------------------------------------------->
+        <ul>
+          <li><button><i id="firstbutton" class="fa fa-commenting"></i></button> </li>
+          <li> <button><i id="seconddrop"class="fa fa-envelope"></i></button> </li>
+          <li><button><i id="thirddrop"class='fas fa-bell'></i></button> </li>
+          <li><img src="dan.jpg" height="50px" width="50"></li>
+          <li><button><i id="dropdrop"class='fa fa-caret-down'>Angelico Gomez</i></button></li> 
+        </ul>
+        <div class="firstdrop">
+          <p>Pogi</p>
+        </div>
+        <div class="seconddrop">
+          <p>Si</p>
+        </div>
+        <div class="thirddrop">
+          <p>Kong</p>
+        </div>
+        <div class="dropdrop">
+          <p> Gomez </p>
+        </div>    
+      </nav>
+      <div class="row">
+        <div class="col-sm-2">
+          <ul>
+            <b>
+              <li><a href="#posts">Posts</a></li>
+              <li><a href="#purchased">Purchased History</a></li>
+              <li><a href="#wallet">E-wallet</a></Li>
+              <li><a href="#vouchers">Vouchers</a></li>
+              <li><a href="#cards">Cards</a></li>
+              <li><a href="#rewards">Rewards</a> </li>
+            </b>
+          </ul>
+        </div>
+        
+        <div class="container-fluid">
+                <h5>View Successful Payments</h5>
+                <div class="table">
+                    <table border='.5' class="table">
+                            <thead>
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Product purchased</th>
+                                <th>Cost</th>
+                                <th>Breakdown of fee</th>
+                                <th>Mode of payment/th>
+                                <th>Reference Number</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                    <td>Pepsi</td>
+                                    <td>asdasd</td>
+                                    <td>john@example.com</td>
+                                    <td>123</td>
+                                    <td>123</td>
+                                     <td>123</td>
+                                     
+                            </tr>
+                            <tr>
+                                    <td>ESpencer</td>
+                                    <td>sdsdsd</td>
+                                    <td>adfadfa</td>
+                                    <td>sdfsdfsdfsd</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            <tr>
+                                    <td>sadasd</td>
+                                    <td>sadasdas</td>
+                                    <td>asdasdas</td>
+                                    <td>123</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            <tr>
+                                    <td>John</td>
+                                    <td>july/30/2019</td>
+                                    <td>john@example.com</td>
+                                    <td>123</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            <tr>
+                                    <td>sdsdsd</td>
+                                    <td>asdasdasd</td>
+                                    <td>sdsdsds</td>
+                                    <td>sss</td>
+                                     <td>123</td>
+                                     <td>123</td>
+
+                            </tr>
+                            <tr>
+                                    <td>sdsd</td>
+                                    <td>asdasd</td>
+                                    <td>asdasda</td>
+                                    <td>sadasdas</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            <tr>
+                                    <td>sad</td>
+                                    <td>asdasdsa</td>
+                                    <td>jaasdas</td>
+                                    <td>123</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            <tr>
+                                    <td>John</td>
+                                    <td>july/30/2019</td>
+                                    <td>john@example.com</td>
+                                    <td>123</td>
+                                     <td>123</td>
+                                     <td>123</td>
+                            </tr>
+                            </tbody>
+                        </table>
+        
+    <!-- jQuery Plugins -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
